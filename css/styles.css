@@ -18,21 +18,6 @@
     color: hsl(228, 45%, 44%); 
 }
 
-.img{
-    background-image: 
-    linear-gradient(
-        rgba(25, 209, 231, 0.5),
-        rgba(243, 17, 224, 0.5)
-    ),
-    url(../images/image-header-mobile.jpg);
-    background-size: cover;
-    max-width: 100%;
-    height: 250px;
-    position: relative;
-    border-radius: 12px 12px 0 0;
-    
-    
-}
 
 body{
     background-color: var(--main-background);
@@ -40,31 +25,41 @@ body{
     padding: 0;
 }
 
-main{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    background-color: var(--card-background);
-    margin: 80px 24px;
-    border-radius: 12px;
+
+
+.img{
+    background-image: 
+    linear-gradient(
+        rgba(78, 14, 180, 0.5),
+        rgba(150, 19, 139, 0.5)
+    ),
+    url(../images/image-header-mobile.jpg);
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    
+    position: relative;
+    border-radius:0 12px 12px  0;
+    
+    
 }
 
-
-
 h2{
-    text-align: center;
-    margin: 40px 40px 0;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 60px;
     color: var(--main-heading-stats);
     font-family: 'Inter', sans-serif;
-    font-size: 25px;
-    font-weight: 400, 700;
+    font-size: 35px;
+    font-weight: 700;
 }
 span{
     color: var(--accent);
 }
 section div h3{
     font-size: 25px;
-    text-align: center;
+    text-align: left;
     color: var(--main-heading-stats);
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -72,34 +67,57 @@ section div h3{
     font-weight: 700;
     
 }
-
+section{
+    display: flex;
+    flex-direction: row;
+}
 section div h1{
     font-size: 25px;
-    text-align: center;
+    text-align: left;
     color: var(--main-heading-stats);
-    margin: 0;
+    margin-left: 50px;
+    margin-right: 30px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
+    margin:  50px 0 5px 50px;
     
 }
 section div h5{
-    font-size: 15px;
-    text-align: center;
+    font-size: 13px;
+    text-align: left;
     text-transform: uppercase;
     color: var(--stat-headings);
     font-weight: 400 ;
     font-family: 'Lexend Deca', sans-serif;
-    margin-bottom: 30px;
-    margin-top: 10px; 
+    margin: 0 0 50px 50px;
+     
 }
 
 p{
     color: var(--stat-headings);
     font-weight: 400;
     font-size: 15px;
-    text-align: center;
+    text-align: left;
     font-family: 'Lexend Deca', sans-serif;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 50px;
+    margin-right: 60px;
     line-height: 25px;
 }
+
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    
+    
+    height: 100%;
+    
+    background-color: var(--card-background);
+    margin: 200px 250px 200px 250px;
+    border-radius: 12px;
+  }
+  
+  #contenedor > div {
+    width: 50%;
+  }
+
+
